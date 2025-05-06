@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/powershell:lts-nanoserver-1809
+FROM mcr.microsoft.com/powershell:nanoserver-ltsc2022
 
-LABEL author="Julien Creach"
-LABEL maintainer="julien.creach@protonmail.com"
+LABEL author="Ebram Tawfik"
+LABEL maintainer="ebram.tawfik.dev@gmail.com"
 
 USER ContainerAdministrator
 SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
