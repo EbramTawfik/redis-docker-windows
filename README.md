@@ -10,24 +10,24 @@ Quick implementation of redis for docker windows. For more information see this 
 
 ### Use pre-built docker image
 
-You can find the pre-build docker image on [Docker Hub](https://hub.docker.com/r/jcreach/redis).
+You can find the pre-build docker image on [Docker Hub](https://hub.docker.com/r/ebramtawfik/redis-windows-nanoserver).
 
 Pull it :
 
 ```powershell
-docker pull jcreach/redis
+docker pull ebramtawfik/redis-windows-nanoserver:5.0.14.1
 ```
 
 Run it like that : 
 
 ```powershell
-docker run --name my-redis -p 6379:6379 -d jcreach/redis:5.0.14.1-lts-nanoserver-1809
+docker run --name my-redis -p 6379:6379 -d ebramtawfik/redis-windows-nanoserver:5.0.14.1
 ```
 
 Or with a password :
 
 ```powershell
-docker run --name my-redis -p 6379:6379 -d jcreach/redis:5.0.14.1-lts-nanoserver-1809 --requirepass MySuperPassword
+docker run --name my-redis -p 6379:6379 -d ebramtawfik/redis-windows-nanoserver:5.0.14.1 --requirepass MySuperPassword
 ```
 
 ### Build your own
